@@ -74,6 +74,7 @@ const io = new Server(server, { cors: { origin: "*" } });
 app.use(express.json());
 app.use(cors({
     origin: [
+        'https://scanfeast-main-1.onrender.com',
         'https://scanfeast-main-frontend.onrender.com',
         'http://localhost:5173',
         'https://localhost:5173',
