@@ -83,7 +83,7 @@ app.use(cors({
     credentials: true
 }));
 
-const DB_URI = "mongodb+srv://ScanFeast:23K91A0501@cluster0.hvrwr5x.mongodb.net/scanfeast_db?retryWrites=true&w=majority";
+const DB_URI = process.env.DB_URI || "mongodb+srv://ScanFeast:23K91A0501@cluster0.hvrwr5x.mongodb.net/scanfeast_db?retryWrites=true&w=majority";
 mongoose.connect(DB_URI).then(() => console.log('✅ DB Connected'));
 
 // --- REAL-TIME ---
