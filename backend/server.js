@@ -72,7 +72,15 @@ const server = http.createServer(app);
 const io = new Server(server, { cors: { origin: "*" } });
 
 app.use(express.json());
-app.use(cors());
+app.use(cors({
+    origin: [
+        'https://scanfeast-main-frontend.onrender.com',
+        'http://localhost:5173',
+        'https://localhost:5173',
+        'http://127.0.0.1:5173'
+    ],
+    credentials: true
+}));
 
 const DB_URI = "mongodb+srv://ScanFeast:23K91A0501@cluster0.hvrwr5x.mongodb.net/scanfeast_db?retryWrites=true&w=majority";
 mongoose.connect(DB_URI).then(() => console.log('✅ DB Connected'));
