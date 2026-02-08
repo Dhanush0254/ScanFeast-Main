@@ -109,4 +109,5 @@ Since there is no "Sign Up" for Admins/Kitchen (for security), follow these step
  * [ ] Push Notifications for Order Ready.
  * [ ] Table QR Code generation from Manager Dashboard.
  * [ ] Chef Analytics (Average preparation time).
+       
 Made with ❤️ by A Dhanush and T Krishna Koushik 
