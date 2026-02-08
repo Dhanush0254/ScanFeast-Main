@@ -1,6 +1,6 @@
 // You will update this URL after deploying the backend in Phase 2
-const PROD_API_URL = import.meta.env.VITE_API_URL || 'YOUR_BACKEND_URL_HERE'; 
-const PROD_SOCKET_URL = import.meta.env.VITE_API_URL || 'YOUR_BACKEND_URL_HERE';;
+const PROD_API_URL = import.meta.env.VITE_API_URL || "https://scanfeast-main.onrender.com"; 
+const PROD_SOCKET_URL = import.meta.env.VITE_API_URL || "https://scanfeast-main.onrender.com";;
 
 // Development URLs (localhost)
 const DEV_API_URL = 'http://localhost:5000';
